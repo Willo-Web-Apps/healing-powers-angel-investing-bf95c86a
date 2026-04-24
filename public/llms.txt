@@ -1,0 +1,20 @@
+# Your New Business
+
+> URL: https://healing-powers-angel-investing.onrender.com
+
+> **HPAI (Healing Powers Angel Investing)** is a proposed tokenized impact angel fund focused on backing early-stage AI and blockchain projects aligned with human health, consciousness, and abundance. The fund issues on-chain RWA (real-world asset) tokens representing LP interests in a regulated investment vehicle, offering investors fractional ownership, transparency, and potential secondary liquidity while targeting deals that demonstrate both financial return and measurable positive impact. HPAI differentiates itself through three core pillars — frontier AI/blockchain, human health & wellness, and positive media/narrative — using AI-assisted sourcing and due diligence, programmable impact covenants, and a community-driven go-to-market strategy targeting crypto-savvy angels, conscious capital allocators, and Web3 participants who want a compliant, purpose-driven co-investment structure for the emerging intersection of tokenization and impact investing.
+
+## About
+
+Your New Business is an AI-powered business. This file provides a brief overview for
+language model crawlers and AI assistants.
+
+## Pages
+
+- /: Home — learn about Your New Business and get started
+- /blog: Blog — articles, updates, and insights
+- /blog/[slug]: Individual blog posts
+
+## Contact
+
+For inquiries, please visit our website.

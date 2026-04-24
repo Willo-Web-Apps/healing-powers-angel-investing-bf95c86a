@@ -1,0 +1,39 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "Your New Business", description = "**HPAI (Healing Powers Angel Investing)** is a proposed tokenized impact angel fund focused on backing early-stage AI and blockchain projects aligned with human health, consciousness, and abundance. The fund issues on-chain RWA (real-world asset) tokens representing LP interests in a regulated investment vehicle, offering investors fractional ownership, transparency, and potential secondary liquidity while targeting deals that demonstrate both financial return and measurable positive impact. HPAI differentiates itself through three core pillars — frontier AI/blockchain, human health & wellness, and positive media/narrative — using AI-assisted sourcing and due diligence, programmable impact covenants, and a community-driven go-to-market strategy targeting crypto-savvy angels, conscious capital allocators, and Web3 participants who want a compliant, purpose-driven co-investment structure for the emerging intersection of tokenization and impact investing." } = Astro.props;
+---
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <title>{title}</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Your New Business",
+      "description": "**HPAI (Healing Powers Angel Investing)** is a proposed tokenized impact angel fund focused on backing early-stage AI and blockchain projects aligned with human health, consciousness, and abundance. The fund issues on-chain RWA (real-world asset) tokens representing LP interests in a regulated investment vehicle, offering investors fractional ownership, transparency, and potential secondary liquidity while targeting deals that demonstrate both financial return and measurable positive impact. HPAI differentiates itself through three core pillars — frontier AI/blockchain, human health & wellness, and positive media/narrative — using AI-assisted sourcing and due diligence, programmable impact covenants, and a community-driven go-to-market strategy targeting crypto-savvy angels, conscious capital allocators, and Web3 participants who want a compliant, purpose-driven co-investment structure for the emerging intersection of tokenization and impact investing.",
+      "url": "https://healing-powers-angel-investing.onrender.com"
+    }
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-surface-50 text-surface-900 font-body antialiased">
+    <Header />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
