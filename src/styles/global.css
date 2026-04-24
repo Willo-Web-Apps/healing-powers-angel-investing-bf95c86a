@@ -1,57 +1,138 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap');
 
 /* -----------------------------------------------------------------------
-   Design Tokens — customize these to change the entire site's look.
-   The Product Agent should edit this @theme block to match the business:
-   - Swap fonts (Google Fonts @import above, font families below)
-   - Change brand colors to match the business personality
-   - Flip surface colors for dark theme (swap light/dark values)
+   Design Tokens — HPAI Capital
+   Dark luxury theme: obsidian backgrounds, burnished gold accents,
+   healing teal for impact metrics.
    ----------------------------------------------------------------------- */
 
 @theme {
-  /* Typography — replace with distinctive Google Fonts for the business */
-  --font-display: ui-sans-serif, system-ui, sans-serif;
-  --font-body: ui-sans-serif, system-ui, sans-serif;
+  /* Typography */
+  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --font-body: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
 
-  /* Brand color scale — agent should customize per business */
-  --color-brand-50: oklch(0.97 0.01 250);
-  --color-brand-100: oklch(0.93 0.02 250);
-  --color-brand-200: oklch(0.87 0.04 250);
-  --color-brand-400: oklch(0.70 0.12 250);
-  --color-brand-500: oklch(0.60 0.16 250);
-  --color-brand-600: oklch(0.50 0.16 250);
+  /* Brand color scale — burnished gold */
+  --color-brand-50:  oklch(0.97 0.015 82);
+  --color-brand-100: oklch(0.92 0.03 82);
+  --color-brand-200: oklch(0.85 0.055 82);
+  --color-brand-400: oklch(0.78 0.085 82);
+  --color-brand-500: oklch(0.73 0.09 82);
+  --color-brand-600: oklch(0.62 0.09 82);
 
-  /* Surface colors — light theme defaults. Flip for dark theme:
-     surface-50 becomes near-black, surface-900 becomes near-white */
-  --color-surface-50: oklch(0.985 0.002 250);
-  --color-surface-100: oklch(0.96 0.004 250);
-  --color-surface-200: oklch(0.92 0.006 250);
-  --color-surface-800: oklch(0.30 0.015 250);
-  --color-surface-900: oklch(0.20 0.015 250);
-  --color-surface-950: oklch(0.14 0.012 250);
+  /* Teal accent scale — healing teal */
+  --color-teal-400:  oklch(0.82 0.10 172);
+  --color-teal-500:  oklch(0.77 0.10 172);
+  --color-teal-600:  oklch(0.67 0.095 172);
+
+  /* Surface colors — DARK THEME (flipped from default)
+     surface-50 = near-black obsidian
+     surface-100 = deep navy-slate
+     surface-200 = slightly lighter navy
+     surface-800 = muted text
+     surface-900 = lighter muted / secondary text
+     surface-950 = near-white warm off-white for primary text */
+  --color-surface-50:  oklch(0.11 0.012 255);   /* #0D1117 obsidian */
+  --color-surface-100: oklch(0.15 0.018 245);   /* dark navy */
+  --color-surface-200: oklch(0.18 0.022 240);   /* #1A2332 navy-slate */
+  --color-surface-300: oklch(0.24 0.025 240);   /* mid navy */
+  --color-surface-400: oklch(0.32 0.022 240);   /* lighter navy */
+  --color-surface-800: oklch(0.62 0.018 240);   /* muted cool text */
+  --color-surface-900: oklch(0.78 0.010 80);    /* warm secondary text */
+  --color-surface-950: oklch(0.96 0.005 80);    /* warm off-white primary text */
 }
 
-/* Page-load animations — CSS only, no JS required */
+/* ---- Base overrides for dark theme ---- */
+body {
+  background-color: oklch(0.11 0.012 255);
+  color: oklch(0.96 0.005 80);
+}
+
+/* Page-load animations */
 @keyframes fadeIn {
   from { opacity: 0; }
-  to { opacity: 1; }
+  to   { opacity: 1; }
 }
 
 @keyframes slideUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.6s ease-out both;
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
 }
 
-.animate-slide-up {
-  animation: slideUp 0.6s ease-out both;
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-6px); }
 }
 
-/* Staggered animation delays for cascading reveals */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
+.animate-fade-in   { animation: fadeIn  0.7s ease-out both; }
+.animate-slide-up  { animation: slideUp 0.7s ease-out both; }
+
+/* Stagger delays */
+.delay-100 { animation-delay: 0.10s; }
+.delay-200 { animation-delay: 0.20s; }
+.delay-300 { animation-delay: 0.30s; }
+.delay-400 { animation-delay: 0.40s; }
+.delay-500 { animation-delay: 0.50s; }
+.delay-600 { animation-delay: 0.60s; }
+
+/* Gold shimmer text utility */
+.text-gold-shimmer {
+  background: linear-gradient(
+    90deg,
+    oklch(0.73 0.09 82) 0%,
+    oklch(0.88 0.10 85) 40%,
+    oklch(0.73 0.09 82) 60%,
+    oklch(0.62 0.09 82) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Gold rule divider */
+.gold-rule {
+  border: none;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    oklch(0.73 0.09 82 / 0.5) 20%,
+    oklch(0.73 0.09 82 / 0.5) 80%,
+    transparent
+  );
+}
+
+/* Teal glow for impact numbers */
+.teal-glow {
+  text-shadow: 0 0 30px oklch(0.77 0.10 172 / 0.4);
+}
+
+/* Gold glow for financial numbers */
+.gold-glow {
+  text-shadow: 0 0 30px oklch(0.73 0.09 82 / 0.5);
+}
+
+/* Frosted glass card */
+.glass-card {
+  background: oklch(0.18 0.022 240 / 0.6);
+  backdrop-filter: blur(16px) saturate(1.2);
+  border: 1px solid oklch(0.73 0.09 82 / 0.15);
+}
+
+/* Noise texture overlay via pseudo-element — applied to sections that define position:relative */
+.noise-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  z-index: 1;
+}

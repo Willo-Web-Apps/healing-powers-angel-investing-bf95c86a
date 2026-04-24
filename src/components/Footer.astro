@@ -1,11 +1,63 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+<footer class="border-t py-16 mt-auto" style="border-color: oklch(0.73 0.09 82 / 0.15);">
+  <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+
+    <div class="grid md:grid-cols-3 gap-12 mb-14">
+
+      <!-- Brand column -->
+      <div class="md:col-span-1">
+        <a href="/" class="flex items-center gap-3 mb-5 group w-fit">
+          <div class="w-7 h-7 border border-brand-500/50 flex items-center justify-center flex-shrink-0">
+            <span class="font-display text-brand-500 text-xs" style="font-weight:600; letter-spacing:0.05em;">HP</span>
+          </div>
+          <span class="font-display text-surface-950 text-base tracking-wide" style="font-weight:600; letter-spacing:0.04em;">HPAI <span class="text-brand-500">Capital</span></span>
+        </a>
+        <p class="font-body font-300 text-surface-800 text-sm leading-relaxed max-w-xs">
+          The world's first tokenized impact angel fund. Backing AI, blockchain, and health ventures that advance human consciousness and abundance.
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div class="md:col-span-1">
+        <h4 class="font-body font-500 text-surface-900 text-xs tracking-[0.15em] uppercase mb-5">Navigate</h4>
+        <ul class="space-y-3">
+          <li><a href="#thesis" class="font-body font-300 text-surface-800 text-sm hover:text-brand-500 transition-colors duration-150">Our Thesis</a></li>
+          <li><a href="#pillars" class="font-body font-300 text-surface-800 text-sm hover:text-brand-500 transition-colors duration-150">Investment Pillars</a></li>
+          <li><a href="#structure" class="font-body font-300 text-surface-800 text-sm hover:text-brand-500 transition-colors duration-150">Fund Structure</a></li>
+          <li><a href="#apply" class="font-body font-300 text-surface-800 text-sm hover:text-brand-500 transition-colors duration-150">Request Access</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal / Contact -->
+      <div class="md:col-span-1">
+        <h4 class="font-body font-500 text-surface-900 text-xs tracking-[0.15em] uppercase mb-5">Contact</h4>
+        <ul class="space-y-3">
+          <li>
+            <a href="mailto:invest@hpai.capital" class="font-body font-300 text-surface-800 text-sm hover:text-brand-500 transition-colors duration-150">
+              invest@hpai.capital
+            </a>
+          </li>
+        </ul>
+        <div class="mt-8">
+          <p class="font-body font-300 text-surface-800 text-xs leading-relaxed">
+            Securities offered under Reg D / Reg S exemptions. For accredited investors only. This is not an offer to sell securities.
+          </p>
+        </div>
+      </div>
+
     </div>
+
+    <!-- Bottom bar -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8" style="border-top: 1px solid oklch(0.73 0.09 82 / 0.12);">
+      <p class="font-body font-300 text-surface-800 text-xs">
+        &copy; {year} HPAI Capital. All rights reserved.
+      </p>
+      <p class="font-body font-300 text-surface-800 text-xs">
+        Wealth with wisdom &nbsp;·&nbsp; Capital as a healing force
+      </p>
+    </div>
+
   </div>
 </footer>

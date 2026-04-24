@@ -1,35 +1,474 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
-<Base title="Your New Business" description="**HPAI (Healing Powers Angel Investing)** is a proposed tokenized impact angel fund focused on backing early-stage AI and blockchain projects aligned with human health, consciousness, and abundance. The fund issues on-chain RWA (real-world asset) tokens representing LP interests in a regulated investment vehicle, offering investors fractional ownership, transparency, and potential secondary liquidity while targeting deals that demonstrate both financial return and measurable positive impact. HPAI differentiates itself through three core pillars — frontier AI/blockchain, human health & wellness, and positive media/narrative — using AI-assisted sourcing and due diligence, programmable impact covenants, and a community-driven go-to-market strategy targeting crypto-savvy angels, conscious capital allocators, and Web3 participants who want a compliant, purpose-driven co-investment structure for the emerging intersection of tokenization and impact investing.">
-  <!-- Hero — the Product Agent will replace this entire page -->
-  <section class="relative min-h-[80vh] flex items-center overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-brand-500/5 via-surface-50 to-brand-500/10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight text-surface-900 font-display max-w-4xl mx-auto leading-[1.1] animate-slide-up">
-        Your New Business
+<Base
+  title="HPAI Capital — Invest in the Future of Human Flourishing"
+  description="HPAI Capital is the world's first tokenized impact angel fund. On-chain RWA tokens representing LP interests in a regulated fund backing AI, blockchain, and health ventures that advance human consciousness and abundance."
+>
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HERO — Cinematic vault opening, immersive dark with gold glow
+  ═══════════════════════════════════════════════════════════════ -->
+  <section class="relative min-h-screen flex items-center overflow-hidden noise-overlay" style="
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%,  oklch(0.73 0.09 82 / 0.18) 0%, transparent 65%),
+      radial-gradient(ellipse 50% 40% at 20% 80%,   oklch(0.77 0.10 172 / 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 30% at 85% 70%,   oklch(0.73 0.09 82 / 0.07) 0%, transparent 55%),
+      conic-gradient(from 200deg at 50% 0%, oklch(0.73 0.09 82 / 0.04), transparent 40%),
+      oklch(0.11 0.012 255);
+  ">
+    <!-- Decorative gold line from top -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-px h-32 bg-gradient-to-b from-transparent via-brand-500/40 to-transparent"></div>
+
+    <div class="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 lg:px-12 py-28 md:py-36 text-center">
+
+      <!-- Eyebrow -->
+      <div class="inline-flex items-center gap-3 mb-10 animate-fade-in">
+        <span class="h-px w-8 bg-brand-500/60"></span>
+        <span class="text-xs tracking-[0.25em] uppercase font-body font-500 text-brand-500">Tokenized Impact Fund</span>
+        <span class="h-px w-8 bg-brand-500/60"></span>
+      </div>
+
+      <!-- Main headline -->
+      <h1 class="font-display font-600 text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.06] tracking-tight text-surface-950 animate-slide-up" style="font-weight:600;">
+        The Angel Fund That<br/>
+        <em class="text-gold-shimmer not-italic" style="font-weight:300; font-style:italic;">Backs Ventures<br/>Healing the World</em>
       </h1>
-      <p class="mt-6 text-lg md:text-xl text-surface-800/60 max-w-2xl mx-auto leading-relaxed animate-slide-up delay-100">
-        **HPAI (Healing Powers Angel Investing)** is a proposed tokenized impact angel fund focused on backing early-stage AI and blockchain projects aligned with human health, consciousness, and abundance. The fund issues on-chain RWA (real-world asset) tokens representing LP interests in a regulated investment vehicle, offering investors fractional ownership, transparency, and potential secondary liquidity while targeting deals that demonstrate both financial return and measurable positive impact. HPAI differentiates itself through three core pillars — frontier AI/blockchain, human health & wellness, and positive media/narrative — using AI-assisted sourcing and due diligence, programmable impact covenants, and a community-driven go-to-market strategy targeting crypto-savvy angels, conscious capital allocators, and Web3 participants who want a compliant, purpose-driven co-investment structure for the emerging intersection of tokenization and impact investing.
+
+      <!-- Sub headline -->
+      <p class="mt-8 text-lg md:text-xl font-body font-300 text-surface-900 max-w-2xl mx-auto leading-relaxed animate-slide-up delay-200">
+        Tokenized LP interests in a regulated impact fund — fractional ownership, on-chain transparency, and secondary liquidity for AI and health deals that matter.
       </p>
-      <div class="mt-10 animate-slide-up delay-200">
-        <a href="#cta" class="inline-block px-8 py-3.5 bg-brand-500 text-white font-semibold rounded-lg hover:bg-brand-600 transition-colors text-base">
-          Get Started
+
+      <!-- CTA group -->
+      <div class="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up delay-300">
+        <a href="#apply" class="group inline-flex items-center gap-2 px-8 py-4 bg-brand-500 hover:bg-brand-400 text-surface-50 font-body font-500 text-sm tracking-wide transition-all duration-200 rounded-none" style="letter-spacing:0.08em;">
+          REQUEST ACCESS
+          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
         </a>
+        <a href="#thesis" class="inline-flex items-center gap-2 px-8 py-4 border border-surface-300/40 hover:border-brand-500/50 text-surface-900 hover:text-brand-500 font-body font-400 text-sm tracking-wide transition-all duration-200" style="letter-spacing:0.08em;">
+          READ THE THESIS
+        </a>
+      </div>
+
+      <!-- Trust micro-proof -->
+      <p class="mt-8 text-xs font-body font-400 text-surface-800 tracking-wide animate-fade-in delay-500">
+        SEC-compliant Reg D/S offering &nbsp;·&nbsp; On-chain LP tokens &nbsp;·&nbsp; Accredited investors only
+      </p>
+    </div>
+
+    <!-- Bottom fade into next section -->
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-surface-50 to-transparent pointer-events-none"></div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       ORIGIN STORY — Narrative, atmospheric
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="thesis" class="relative py-24 md:py-36 overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12">
+
+      <!-- Chapter label -->
+      <div class="flex items-center gap-4 mb-12">
+        <span class="font-display italic text-brand-500 text-lg" style="font-weight:300;">Chapter I</span>
+        <span class="h-px flex-1 bg-brand-500/20"></span>
+      </div>
+
+      <h2 class="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.1] text-surface-950 mb-10" style="font-weight:400;">
+        Capital that heals —<br/><em class="text-brand-500" style="font-style:italic; font-weight:300;">not just grows.</em>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-12 text-surface-900 font-body font-300 text-lg leading-[1.8]">
+        <div>
+          <p class="mb-6">
+            We founded HPAI Capital on a single conviction: that the most transformative returns of this decade will come from the intersection of artificial intelligence, blockchain infrastructure, and human health.
+          </p>
+          <p>
+            Yet the best deals in this space remain locked inside traditional angel networks — illiquid, opaque, and accessible only to a narrow elite. We're changing that.
+          </p>
+        </div>
+        <div>
+          <p class="mb-6">
+            By issuing on-chain RWA tokens that represent verified LP interests in a regulated co-investment vehicle, we give crypto-savvy angels and conscious capital allocators the access they've always deserved — with full transparency and real secondary liquidity.
+          </p>
+          <p class="text-brand-500 font-400 font-display italic text-xl leading-relaxed" style="font-weight:400; font-style:italic;">
+            "Wealth with wisdom. Capital as a healing force."
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section id="cta" class="py-20 md:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl bg-brand-500 p-10 md:p-16 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white font-display">Ready to get started?</h2>
-        <p class="mt-4 text-lg text-white/80 max-w-xl mx-auto">Get in touch and see what we can do for you.</p>
-        <a href="mailto:hello@example.com" class="mt-8 inline-block px-8 py-3.5 bg-white text-surface-900 font-semibold rounded-lg hover:bg-surface-100 transition-colors text-base">
-          Contact Us
-        </a>
+  <hr class="gold-rule max-w-5xl mx-auto" />
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       THREE PILLARS — Values / Investment thesis
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="pillars" class="relative py-24 md:py-36 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+
+      <!-- Chapter label -->
+      <div class="flex items-center gap-4 mb-12">
+        <span class="font-display italic text-brand-500 text-lg" style="font-weight:300;">Chapter II</span>
+        <span class="h-px flex-1 bg-brand-500/20"></span>
+      </div>
+
+      <h2 class="font-display text-4xl md:text-5xl leading-[1.12] text-surface-950 mb-4" style="font-weight:400;">
+        Three pillars.<br/>One thesis.
+      </h2>
+      <p class="font-body font-300 text-surface-900 text-lg mb-16 max-w-xl">
+        Every deal we back must advance at least one pillar — and the highest-conviction opportunities advance all three.
+      </p>
+
+      <!-- Pillars grid -->
+      <div class="grid md:grid-cols-3 gap-0 md:gap-px" style="background: oklch(0.73 0.09 82 / 0.12);">
+
+        <!-- Pillar I -->
+        <div class="relative glass-card p-10 md:p-12 overflow-hidden group hover:bg-surface-200/70 transition-colors duration-300">
+          <span class="absolute top-6 right-8 font-display text-[7rem] leading-none text-brand-500/5 select-none pointer-events-none" style="font-weight:700; font-style:italic;">I</span>
+          <div class="relative z-10">
+            <div class="w-10 h-10 mb-8 flex items-center justify-center border border-brand-500/30 rounded-sm">
+              <svg class="w-5 h-5 text-brand-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="font-display text-2xl text-surface-950 mb-4" style="font-weight:600;">Frontier AI<br/>&amp; Blockchain</h3>
+            <div class="w-8 h-px bg-brand-500 mb-4"></div>
+            <p class="font-body font-300 text-surface-900 text-base leading-relaxed">
+              AI systems that augment human intelligence, and blockchain infrastructure that enables trustless coordination at scale. We back teams building the rails for the next decade.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar II -->
+        <div class="relative glass-card p-10 md:p-12 overflow-hidden group hover:bg-surface-200/70 transition-colors duration-300" style="background: oklch(0.20 0.025 240 / 0.7);">
+          <span class="absolute top-6 right-8 font-display text-[7rem] leading-none text-teal-500/8 select-none pointer-events-none" style="font-weight:700; font-style:italic; color: oklch(0.77 0.10 172 / 0.07);">II</span>
+          <div class="relative z-10">
+            <div class="w-10 h-10 mb-8 flex items-center justify-center border rounded-sm" style="border-color: oklch(0.77 0.10 172 / 0.35);">
+              <svg class="w-5 h-5" style="color: oklch(0.77 0.10 172);" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="font-display text-2xl text-surface-950 mb-4" style="font-weight:600;">Human Health<br/>&amp; Wellness</h3>
+            <div class="w-8 h-px mb-4" style="background: oklch(0.77 0.10 172);"></div>
+            <p class="font-body font-300 text-surface-900 text-base leading-relaxed">
+              Longevity, mental health, preventive care, and consciousness technologies. Ventures that give people more time, clarity, and vitality — the foundation of all abundance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Pillar III -->
+        <div class="relative glass-card p-10 md:p-12 overflow-hidden group hover:bg-surface-200/70 transition-colors duration-300">
+          <span class="absolute top-6 right-8 font-display text-[7rem] leading-none text-brand-500/5 select-none pointer-events-none" style="font-weight:700; font-style:italic;">III</span>
+          <div class="relative z-10">
+            <div class="w-10 h-10 mb-8 flex items-center justify-center border border-brand-500/30 rounded-sm">
+              <svg class="w-5 h-5 text-brand-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="font-display text-2xl text-surface-950 mb-4" style="font-weight:600;">Positive Media<br/>&amp; Narrative</h3>
+            <div class="w-8 h-px bg-brand-500 mb-4"></div>
+            <p class="font-body font-300 text-surface-900 text-base leading-relaxed">
+              Platforms and studios shaping the cultural stories of our time — because narrative infrastructure determines which futures we collectively build toward.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
+
+  <hr class="gold-rule max-w-5xl mx-auto" />
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       HOW IT WORKS — Process / Structure
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="structure" class="relative py-24 md:py-36">
+    <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+
+      <!-- Chapter label -->
+      <div class="flex items-center gap-4 mb-12">
+        <span class="font-display italic text-brand-500 text-lg" style="font-weight:300;">Chapter III</span>
+        <span class="h-px flex-1 bg-brand-500/20"></span>
+      </div>
+
+      <h2 class="font-display text-4xl md:text-5xl leading-[1.12] text-surface-950 mb-4" style="font-weight:400;">
+        How HPAI works.
+      </h2>
+      <p class="font-body font-300 text-surface-900 text-lg mb-16 max-w-xl">
+        A compliant, transparent structure that brings the best of private equity and Web3 into one cohesive vehicle.
+      </p>
+
+      <!-- Steps — vertical timeline feel -->
+      <div class="space-y-0">
+
+        <!-- Step 1 -->
+        <div class="flex gap-8 md:gap-12 pb-12 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex items-center justify-center border border-brand-500/40 bg-surface-100/50 flex-shrink-0">
+              <span class="font-display text-brand-500 text-xl" style="font-weight:600;">01</span>
+            </div>
+            <div class="flex-1 w-px bg-brand-500/15 mt-4"></div>
+          </div>
+          <div class="pt-3 pb-8">
+            <h3 class="font-display text-2xl md:text-3xl text-surface-950 mb-3" style="font-weight:600;">Fund Formation &amp; Compliance</h3>
+            <p class="font-body font-300 text-surface-900 text-base leading-relaxed max-w-lg">
+              HPAI Capital operates as a Reg D / Reg S compliant SPV. Accredited investors are KYC/AML verified before receiving allocation. The fund agreement is immutably encoded on-chain, ensuring every LP can audit the terms at any time.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex gap-8 md:gap-12 pb-12 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex items-center justify-center border border-brand-500/40 bg-surface-100/50 flex-shrink-0">
+              <span class="font-display text-brand-500 text-xl" style="font-weight:600;">02</span>
+            </div>
+            <div class="flex-1 w-px bg-brand-500/15 mt-4"></div>
+          </div>
+          <div class="pt-3 pb-8">
+            <h3 class="font-display text-2xl md:text-3xl text-surface-950 mb-3" style="font-weight:600;">AI-Assisted Deal Sourcing</h3>
+            <p class="font-body font-300 text-surface-900 text-base leading-relaxed max-w-lg">
+              Our proprietary AI pipeline screens thousands of early-stage opportunities across the three pillars, scoring each on financial viability, team quality, and programmable impact metrics. The top deals surface to our human partners for final diligence.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex gap-8 md:gap-12 pb-12 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex items-center justify-center border border-brand-500/40 bg-surface-100/50 flex-shrink-0">
+              <span class="font-display text-brand-500 text-xl" style="font-weight:600;">03</span>
+            </div>
+            <div class="flex-1 w-px bg-brand-500/15 mt-4"></div>
+          </div>
+          <div class="pt-3 pb-8">
+            <h3 class="font-display text-2xl md:text-3xl text-surface-950 mb-3" style="font-weight:600;">RWA Token Issuance</h3>
+            <p class="font-body font-300 text-surface-900 text-base leading-relaxed max-w-lg">
+              Each verified LP interest is represented by an on-chain RWA token. Your fractional ownership, distributions, and impact covenant data are all readable on-chain — no black box, no quarterly PDF waiting.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex gap-8 md:gap-12 relative">
+          <div class="flex flex-col items-center">
+            <div class="w-12 h-12 flex items-center justify-center border border-brand-500/40 bg-surface-100/50 flex-shrink-0">
+              <span class="font-display text-brand-500 text-xl" style="font-weight:600;">04</span>
+            </div>
+          </div>
+          <div class="pt-3">
+            <h3 class="font-display text-2xl md:text-3xl text-surface-950 mb-3" style="font-weight:600;">Liquidity &amp; Impact Reporting</h3>
+            <p class="font-body font-300 text-surface-900 text-base leading-relaxed max-w-lg">
+              Secondary market trading of LP tokens is enabled through our partner DEX infrastructure — providing liquidity that traditional angel funds simply cannot offer. Quarterly impact reports track both financial returns and real-world measurable outcomes.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-rule max-w-5xl mx-auto" />
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       METRICS — Dual-return language: Gold = financial, Teal = impact
+  ═══════════════════════════════════════════════════════════════ -->
+  <section class="relative py-24 md:py-32 overflow-hidden noise-overlay" style="
+    background:
+      radial-gradient(ellipse 70% 50% at 80% 50%, oklch(0.73 0.09 82 / 0.08) 0%, transparent 65%),
+      radial-gradient(ellipse 50% 50% at 10% 60%, oklch(0.77 0.10 172 / 0.07) 0%, transparent 60%),
+      oklch(0.15 0.018 245);
+  ">
+    <div class="relative z-10 max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+
+      <p class="font-display italic text-brand-500 text-lg mb-12" style="font-weight:300;">By the numbers</p>
+
+      <!-- Legend -->
+      <div class="flex gap-8 mb-12">
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-3 rounded-full bg-brand-500"></div>
+          <span class="font-body font-400 text-surface-900 text-sm tracking-wide">Financial Return</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-3 rounded-full" style="background: oklch(0.77 0.10 172);"></div>
+          <span class="font-body font-400 text-surface-900 text-sm tracking-wide">Impact Metric</span>
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-8">
+
+        <div class="border-t border-brand-500/30 pt-6">
+          <p class="font-display text-5xl md:text-6xl gold-glow text-brand-500 leading-none mb-3" style="font-weight:300;">$50M</p>
+          <p class="font-body font-400 text-surface-900 text-sm leading-snug">Target fund size, first close</p>
+        </div>
+
+        <div class="border-t pt-6" style="border-color: oklch(0.77 0.10 172 / 0.35);">
+          <p class="font-display text-5xl md:text-6xl teal-glow leading-none mb-3" style="font-weight:300; color: oklch(0.77 0.10 172);">3×</p>
+          <p class="font-body font-400 text-surface-900 text-sm leading-snug">Minimum measurable human-health outcomes per portfolio company</p>
+        </div>
+
+        <div class="border-t border-brand-500/30 pt-6">
+          <p class="font-display text-5xl md:text-6xl gold-glow text-brand-500 leading-none mb-3" style="font-weight:300;">$25K</p>
+          <p class="font-body font-400 text-surface-900 text-sm leading-snug">Minimum LP token investment</p>
+        </div>
+
+        <div class="border-t pt-6" style="border-color: oklch(0.77 0.10 172 / 0.35);">
+          <p class="font-display text-5xl md:text-6xl teal-glow leading-none mb-3" style="font-weight:300; color: oklch(0.77 0.10 172);">100%</p>
+          <p class="font-body font-400 text-surface-900 text-sm leading-snug">On-chain verifiable impact covenants for every portfolio deal</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       WHO IT'S FOR — Target audience
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="who" class="relative py-24 md:py-36">
+    <div class="max-w-5xl mx-auto px-6 sm:px-8 lg:px-12">
+
+      <!-- Chapter label -->
+      <div class="flex items-center gap-4 mb-12">
+        <span class="font-display italic text-brand-500 text-lg" style="font-weight:300;">Chapter IV</span>
+        <span class="h-px flex-1 bg-brand-500/20"></span>
+      </div>
+
+      <h2 class="font-display text-4xl md:text-5xl leading-[1.12] text-surface-950 mb-4" style="font-weight:400;">
+        Built for a new kind<br/>of investor.
+      </h2>
+      <p class="font-body font-300 text-surface-900 text-lg mb-16 max-w-xl">
+        HPAI is for those who believe capital should be a healing force — and who want the infrastructure to act on that belief.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Audience 1 -->
+        <div class="p-8 border border-surface-300/20 hover:border-brand-500/30 transition-colors duration-300">
+          <div class="w-8 h-8 mb-6 flex items-center justify-center">
+            <svg class="w-6 h-6 text-brand-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl text-surface-950 mb-3" style="font-weight:600;">Crypto-Native Angels</h3>
+          <p class="font-body font-300 text-surface-900 text-sm leading-relaxed">
+            Accredited investors with $250K–$5M in crypto net worth who want regulated, compliant exposure to early-stage AI and health deals — without abandoning the transparency of Web3.
+          </p>
+        </div>
+
+        <!-- Audience 2 -->
+        <div class="p-8 border border-surface-300/20 hover:border-brand-500/30 transition-colors duration-300">
+          <div class="w-8 h-8 mb-6 flex items-center justify-center">
+            <svg class="w-6 h-6 text-brand-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl text-surface-950 mb-3" style="font-weight:600;">Conscious Capital Allocators</h3>
+          <p class="font-body font-300 text-surface-900 text-sm leading-relaxed">
+            ESG family offices and impact-first allocators seeking measurable positive outcomes and competitive financial returns — with programmable covenants that hold portfolio companies accountable.
+          </p>
+        </div>
+
+        <!-- Audience 3 -->
+        <div class="p-8 border border-surface-300/20 hover:border-brand-500/30 transition-colors duration-300">
+          <div class="w-8 h-8 mb-6 flex items-center justify-center">
+            <svg class="w-6 h-6 text-brand-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl text-surface-950 mb-3" style="font-weight:600;">Web3 / DeFi Participants</h3>
+          <p class="font-body font-300 text-surface-900 text-sm leading-relaxed">
+            DeFi power users and DAO contributors who understand tokenization deeply and want a co-investment structure that bridges on-chain capital with off-chain venture returns.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <hr class="gold-rule max-w-5xl mx-auto" />
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       TESTIMONIAL / MANIFESTO PULL QUOTE
+  ═══════════════════════════════════════════════════════════════ -->
+  <section class="py-24 md:py-36">
+    <div class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-12 text-center">
+      <div class="mb-8">
+        <span class="font-display italic text-brand-500/60 text-6xl leading-none">&ldquo;</span>
+      </div>
+      <blockquote class="font-display text-3xl md:text-4xl lg:text-5xl text-surface-950 leading-[1.2] mb-10" style="font-weight:300; font-style:italic;">
+        We are not building another fund.<br/>We are building a new language<br/>for what capital can mean.
+      </blockquote>
+      <cite class="not-italic font-body font-400 text-surface-800 text-sm tracking-[0.15em] uppercase">
+        HPAI Capital &mdash; Founding Manifesto
+      </cite>
+    </div>
+  </section>
+
+  <hr class="gold-rule max-w-5xl mx-auto" />
+
+
+  <!-- ═══════════════════════════════════════════════════════════════
+       CTA — Apply for Access
+  ═══════════════════════════════════════════════════════════════ -->
+  <section id="apply" class="relative py-28 md:py-40 overflow-hidden noise-overlay" style="
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 50%, oklch(0.73 0.09 82 / 0.12) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 15% 80%, oklch(0.77 0.10 172 / 0.06) 0%, transparent 55%),
+      oklch(0.11 0.012 255);
+  ">
+    <!-- Decorative corner rules -->
+    <div class="absolute top-12 left-12 w-12 h-12 border-t border-l border-brand-500/30 pointer-events-none"></div>
+    <div class="absolute top-12 right-12 w-12 h-12 border-t border-r border-brand-500/30 pointer-events-none"></div>
+    <div class="absolute bottom-12 left-12 w-12 h-12 border-b border-l border-brand-500/30 pointer-events-none"></div>
+    <div class="absolute bottom-12 right-12 w-12 h-12 border-b border-r border-brand-500/30 pointer-events-none"></div>
+
+    <div class="relative z-10 max-w-3xl mx-auto px-6 sm:px-8 text-center">
+
+      <div class="inline-flex items-center gap-3 mb-10">
+        <span class="h-px w-8 bg-brand-500/60"></span>
+        <span class="text-xs tracking-[0.25em] uppercase font-body font-500 text-brand-500">Private Membership</span>
+        <span class="h-px w-8 bg-brand-500/60"></span>
+      </div>
+
+      <h2 class="font-display text-4xl md:text-5xl lg:text-6xl text-surface-950 leading-[1.1] mb-6" style="font-weight:400;">
+        Join a fund that<br/>
+        <em class="text-gold-shimmer" style="font-style:italic; font-weight:300;">invests with purpose.</em>
+      </h2>
+
+      <p class="font-body font-300 text-surface-900 text-lg mb-12 max-w-xl mx-auto leading-relaxed">
+        We accept accredited investors on a rolling basis. Request access to receive our fund deck, LP agreement terms, and portfolio pipeline briefing.
+      </p>
+
+      <!-- Email capture form -->
+      <form class="flex flex-col sm:flex-row gap-0 max-w-lg mx-auto mb-6" action="mailto:invest@hpai.capital" method="GET">
+        <input
+          type="email"
+          placeholder="your@email.com"
+          class="flex-1 px-5 py-4 bg-surface-200/60 border border-surface-300/30 text-surface-950 placeholder-surface-800 font-body font-300 text-sm focus:outline-none focus:border-brand-500/50 transition-colors"
+          style="backdrop-filter: blur(8px);"
+          required
+        />
+        <button
+          type="submit"
+          class="px-8 py-4 bg-brand-500 hover:bg-brand-400 text-surface-50 font-body font-500 text-sm tracking-wide transition-colors duration-200 whitespace-nowrap"
+          style="letter-spacing:0.08em;"
+        >
+          REQUEST ACCESS
+        </button>
+      </form>
+
+      <p class="font-body font-300 text-surface-800 text-xs tracking-wide">
+        Accredited investors only &nbsp;·&nbsp; SEC Reg D / Reg S compliant &nbsp;·&nbsp; Minimum $25,000
+      </p>
+
+    </div>
+  </section>
+
 </Base>
